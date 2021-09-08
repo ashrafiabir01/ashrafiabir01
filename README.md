@@ -9,7 +9,8 @@
 <li><i>i work to see people's smile 😀</li></i>
 <li><i>Fight For Islam And Humanity 😇</li></i>
 <br>
-## KNOW MORE ABOUT US>>>>
+## KNOW MORE ABOUT ME>>>
+<br>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ashrafiabir01&show_icons=true&theme=radical)
 <br>
