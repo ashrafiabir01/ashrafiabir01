@@ -22,6 +22,7 @@
 
 [<img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" />](https://github.com/ashrafiabir01) [<img alt="Github" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/ashrafi_abir)
 
+<img src ="https://metrics.lecoq.io/ashrafiabir01?template=classic&achievements=1&achievements.threshold=C&achievements.secrets=true&achievements.display=compact&achievements.limit=0&config.timezone=Asia%2FDhaka">
 
 ---
 <p align="center"> © 2021 Dark Hunter 141, all rights reserved. </p>
