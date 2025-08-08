@@ -33,14 +33,14 @@ I am **Ashrafi Khandaker Abir**, known online as **DarkHunter141** and **DarkXpl
 
 | Language / Technology | Proficiency | Description                                  |
 |----------------------|-------------|----------------------------------------------|
-| **Python**           | ![90%](https://progress-bar.dev/90/) | Automation, security scripts, AI research |
-| **Dart & Flutter**   | ![75%](https://progress-bar.dev/75/) | Mobile & web apps development               |
-| **JavaScript**       | ![65%](https://progress-bar.dev/65/) | Web automation, frontend, Node.js           |
-| **Bash / Shell**     | ![85%](https://progress-bar.dev/85/) | Linux automation, scripting                  |
-| **C++ / Go**         | ![55%](https://progress-bar.dev/55/) | Systems programming, performance tools       |
-| **Cloud Platforms**  | ![70%](https://progress-bar.dev/70/) | AWS, Azure, Google Cloud, CI/CD              |
-| **Machine Learning** | ![60%](https://progress-bar.dev/60/) | TensorFlow, PyTorch, NLP                      |
-| **Security Tools**   | ![80%](https://progress-bar.dev/80/) | Pentesting, vulnerability scanning           |
+| **Python**           | ![Python](https://img.shields.io/badge/Proficiency-90%25-brightgreen) | Automation, security scripts, AI research |
+| **Dart & Flutter**   | ![Dart](https://img.shields.io/badge/Proficiency-75%25-yellowgreen) | Mobile & web apps development               |
+| **JavaScript**       | ![JS](https://img.shields.io/badge/Proficiency-65%25-yellow) | Web automation, frontend, Node.js           |
+| **Bash / Shell**     | ![Bash](https://img.shields.io/badge/Proficiency-85%25-green) | Linux automation, scripting                  |
+| **C++ / Go**         | ![C++](https://img.shields.io/badge/Proficiency-55%25-orange) | Systems programming, performance tools       |
+| **Cloud Platforms**  | ![Cloud](https://img.shields.io/badge/Proficiency-70%25-lightgrey) | AWS, Azure, Google Cloud, CI/CD              |
+| **Machine Learning** | ![ML](https://img.shields.io/badge/Proficiency-60%25-blue) | TensorFlow, PyTorch, NLP                      |
+| **Security Tools**   | ![Security](https://img.shields.io/badge/Proficiency-80%25-blueviolet) | Pentesting, vulnerability scanning           |
 
 ---
 
