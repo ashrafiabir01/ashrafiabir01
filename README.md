@@ -1,6 +1,4 @@
-# Ashrafi Khandaker Abir (DarkXploit) 🚀
-
-![Banner](https://devabir.com/assets/img/profile-banner.png)
+# Ashrafi Khandaker Abir (DarkXploit) 
 
 [![Website](https://img.shields.io/badge/Website-devabir.com-blue?style=for-the-badge&logo=google-chrome)](https://devabir.com) 
 [![GitHub followers](https://img.shields.io/github/followers/ashrafiabir01?style=for-the-badge)](https://github.com/ashrafiabir01?tab=followers)
