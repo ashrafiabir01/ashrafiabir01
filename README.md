@@ -1,88 +1,182 @@
-# Ashrafi Khandaker Abir (DarkXploit) 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:2563eb,100:7c3aed&height=220&section=header&text=Ashrafi%20Khandaker%20Abir&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=DarkXploit%20%7C%20Developer%20%7C%20Automation%20Builder%20%7C%20Security%20Learner&descAlignY=58&descSize=16" alt="header"/>
+</p>
 
-[![Website](https://img.shields.io/badge/Website-devabir.com-blue?style=for-the-badge&logo=google-chrome)](https://devabir.com) 
-[![GitHub followers](https://img.shields.io/github/followers/ashrafiabir01?style=for-the-badge)](https://github.com/ashrafiabir01?tab=followers)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ashrafi%20Abir-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ashrafiabir)
-[![YouTube](https://img.shields.io/badge/YouTube-DarkHunter141-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@darkhunter141)
-[![Twitter](https://img.shields.io/badge/Twitter-@darkxploit-blue?style=for-the-badge&logo=twitter)](https://twitter.com/darkxploit)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&lines=I+build+tools+that+solve+real+problems.;Automation%2C+security%2C+AI%2C+backend%2C+and+web.;Clean+code.+Useful+output.+Real+work." alt="Typing SVG" />
+</p>
 
----
-
-## 👋 About Me
-
-I am **Ashrafi Khandaker Abir**, known online as **DarkHunter141** and **DarkXploit** — a software engineer, AI researcher, cybersecurity expert, and passionate open-source advocate from Bangladesh.
-
-- 🔭 Building security & automation tools  
-- 🌱 Exploring AI, machine learning, and cloud tech  
-- 💡 Sharing knowledge via tutorials & open source  
-- 🏆 Passionate about ethical hacking & community growth  
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ashrafiabir01&label=Profile%20Views&color=2563eb&style=for-the-badge" alt="profile views"/>
+  <img src="https://img.shields.io/github/followers/ashrafiabir01?style=for-the-badge&color=7c3aed&labelColor=0f172a" alt="followers"/>
+  <img src="https://img.shields.io/badge/Focus-Automation%20%26%20Security-38bdf8?style=for-the-badge&labelColor=0f172a" alt="focus"/>
+</p>
 
 ---
 
-## 📊 GitHub Stats
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> About Me
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ashrafiabir01&show_icons=true&theme=tokyonight&hide_border=true)
+I’m **Ashrafi Khandaker Abir**, known online as **DarkXploit**.
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ashrafiabir01&layout=compact&theme=tokyonight&hide_border=true)
+I enjoy building things that are practical, fast, and useful.  
+Most of my projects come from real problems I face, then I turn those ideas into scripts, tools, web apps, or experiments.
 
----
+I like working with automation, backend systems, cybersecurity utilities, AI/ML experiments, APIs, Linux tools, and web-based products.
 
-## 💻 Tech Stack & Skills
-
-| Language / Technology | Proficiency | Description                                  |
-|----------------------|-------------|----------------------------------------------|
-| **Python**           | ![Python](https://img.shields.io/badge/Proficiency-90%25-brightgreen) | Automation, security scripts, AI research |
-| **Dart & Flutter**   | ![Dart](https://img.shields.io/badge/Proficiency-75%25-yellowgreen) | Mobile & web apps development               |
-| **JavaScript**       | ![JS](https://img.shields.io/badge/Proficiency-65%25-yellow) | Web automation, frontend, Node.js           |
-| **Bash / Shell**     | ![Bash](https://img.shields.io/badge/Proficiency-85%25-green) | Linux automation, scripting                  |
-| **C++ / Go**         | ![C++](https://img.shields.io/badge/Proficiency-55%25-orange) | Systems programming, performance tools       |
-| **Cloud Platforms**  | ![Cloud](https://img.shields.io/badge/Proficiency-70%25-lightgrey) | AWS, Azure, Google Cloud, CI/CD              |
-| **Machine Learning** | ![ML](https://img.shields.io/badge/Proficiency-60%25-blue) | TensorFlow, PyTorch, NLP                      |
-| **Security Tools**   | ![Security](https://img.shields.io/badge/Proficiency-80%25-blueviolet) | Pentesting, vulnerability scanning           |
+> I do not just write code to make something run.  
+> I try to make it useful, clean, and easy to improve.
 
 ---
 
+## What I’m Into
+
+<table>
+<tr>
+<td width="50%">
+
+### Automation & Tools
+- Python automation scripts
+- Bots and workflow tools
+- CLI utilities
+- API-based systems
+- Data processing scripts
+
+</td>
+<td width="50%">
+
+### Music Intelligence
+- Building a personal music brain
+- Working with Spotify and music metadata
+- Genre, mood, and vibe analysis
+- Playlist automation and discovery systems
+- Audio, lyrics, and artist data experiments
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### AI / ML
+- ML experiments
+- NLP and classification
+- Data analysis
+- Model testing
+- Practical AI tools
+
+</td>
+<td width="50%">
+
+### Web & Backend
+- Next.js projects
+- REST APIs
+- Backend services
+- Database-backed tools
+- Clean dashboards
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎥 YouTube Channel
+## Tech Stack
 
-Subscribe for tutorials and demos on:
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,dart,java,cpp,go,bash" />
+</p>
 
-- Cybersecurity & ethical hacking  
-- Programming & automation  
-- Open source tools walkthroughs  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=flask,django,fastapi,mysql,postgresql,mongodb,sqlite" />
+</p>
 
-👉 [DarkHunter141 on YouTube](https://www.youtube.com/@darkhunter141)
-
----
-
-## 🤝 Connect with Me
-
-| Platform    | Link                                             |
-|-------------|--------------------------------------------------|
-| Email       | [devabirs@yahoo.com](mailto:devabirs@yahoo.com)  |
-| LinkedIn    | [linkedin.com/in/ashrafiabir](https://linkedin.com/in/ashrafiabir) |
-| GitHub      | [github.com/ashrafiabir01](https://github.com/ashrafiabir01) |
-| Facebook    | [facebook.com/darkhunter141official](https://facebook.com/darkhunter141official) |
-| Website     | [devabir.com](https://devabir.com)                |
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,docker,linux,git,github,vscode" />
+</p>
 
 ---
 
-## 🎓 Education & Certifications
-
-- Diploma in Computer Science — Sherpur Polytechnic Institute  
-- AI Research Internship — European IT Firm  
-- Certified Ethical Hacker (CEH) — Ongoing  
-- Multiple cloud and cybersecurity certifications  
-
----
-
-## 🌟 Fun Facts
+## My Build Philosophy
 
 ```text
-💡 GitHub Streak: 120+ days
-🛠️ 80+ repositories
-📚 Speaker at local tech meetups
-🎮 Gamer & tech enthusiast
-🌍 Advocate for open knowledge & education
+Problem first.
+Code second.
+Keep it simple.
+Make it useful.
+Improve it again.
+```
+
+I prefer tools that give clear output, handle errors properly, and save time in real use.
+
+---
+
+## GitHub Overview
+
+<p align="center">
+
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=ashrafiabir01&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+ 
+</p>
+
+
+
+---
+
+## Things I Like Building
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Security%20Tools-0f172a?style=for-the-badge&logo=hackthebox&logoColor=38bdf8" />
+  <img src="https://img.shields.io/badge/Automation%20Scripts-0f172a?style=for-the-badge&logo=python&logoColor=ffd43b" />
+  <img src="https://img.shields.io/badge/API%20Systems-0f172a?style=for-the-badge&logo=fastapi&logoColor=22c55e" />
+  <img src="https://img.shields.io/badge/Web%20Tools-0f172a?style=for-the-badge&logo=nextdotjs&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/AI%20Experiments-0f172a?style=for-the-badge&logo=tensorflow&logoColor=ff6f00" />
+</p>
+
+---
+
+## Currently Exploring
+
+```yaml
+automation:
+  - workflow systems
+  - large scale scripts
+  - API integrations
+
+ai_ml:
+  - classification models
+  - useful AI tools
+  - data driven systems
+
+backend:
+  - scalable APIs
+  - clean architecture
+  - database design
+```
+
+---
+
+## A Little More Human
+
+I break things while learning.  
+Then I fix them.  
+Then I make them better.
+
+That is basically how most of my projects grow.
+
+---
+
+## Contact
+
+<p align="center">
+  <a href="mailto:devabirs@yahoo.com">
+    <img src="https://img.shields.io/badge/Email-devabirs%40yahoo.com-2563eb?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0f172a" alt="email"/>
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:2563eb,100:0f172a&height=120&section=footer" alt="footer"/>
+</p>
