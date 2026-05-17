@@ -1,116 +1,999 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Abir's Profile</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ashrafi Khandaker Abir, DarkXploit. Developer, automation builder, AI and music intelligence experimenter." />
+  <meta name="keywords" content="Ashrafi Khandaker Abir, DarkXploit, ashrafiabir01, developer, automation, AI, music intelligence, cybersecurity, Python, GitHub" />
+  <meta name="author" content="Ashrafi Khandaker Abir" />
 
-  <!-- Font Awesome if you need it
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> 
-  <!--Replace with your tailwind.css once created-->
+  <meta property="og:title" content="Ashrafi Khandaker Abir | DarkXploit" />
+  <meta property="og:description" content="Developer, automation builder, AI experimenter, and music intelligence project builder." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ashrafiabir01.github.io" />
 
+  <title>Ashrafi Khandaker Abir | DarkXploit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-soft: #0b1023;
+      --card: rgba(15, 23, 42, 0.72);
+      --card-strong: rgba(15, 23, 42, 0.92);
+      --border: rgba(148, 163, 184, 0.18);
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --muted-2: #64748b;
+      --blue: #38bdf8;
+      --purple: #8b5cf6;
+      --green: #22c55e;
+      --yellow: #facc15;
+      --pink: #ec4899;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max-width: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 34rem),
+        radial-gradient(circle at top right, rgba(139, 92, 246, 0.22), transparent 32rem),
+        radial-gradient(circle at 50% 30%, rgba(236, 72, 153, 0.08), transparent 38rem),
+        var(--bg);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 8, 22, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      font-family: "JetBrains Mono", monospace;
+      box-shadow: 0 16px 45px rgba(56, 189, 248, 0.22);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 96px 0 68px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      padding: 10px 14px;
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 999px;
+      color: var(--blue);
+      background: rgba(56, 189, 248, 0.08);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .pulse {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 0 8px rgba(34, 197, 94, 0.12);
+    }
+
+    h1 {
+      max-width: 860px;
+      font-size: clamp(46px, 8vw, 86px);
+      line-height: 0.98;
+      letter-spacing: -0.075em;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff, #7dd3fc, #c4b5fd);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      max-width: 740px;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 18px 50px rgba(56, 189, 248, 0.2);
+    }
+
+    .button.secondary {
+      background: rgba(15, 23, 42, 0.72);
+      color: var(--text);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .profile-card {
+      position: relative;
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.58));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -80px;
+      top: -80px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.24), transparent 68%);
+    }
+
+    .avatar {
+      position: relative;
+      width: 118px;
+      height: 118px;
+      border-radius: 36px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(139, 92, 246, 0.9));
+      color: white;
+      font-size: 38px;
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 800;
+      box-shadow: 0 24px 70px rgba(139, 92, 246, 0.24);
+    }
+
+    .profile-card h2 {
+      font-size: 24px;
+      letter-spacing: -0.03em;
+      margin-bottom: 6px;
+    }
+
+    .profile-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .mini-stat {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(2, 6, 23, 0.42);
+      border: 1px solid var(--border);
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .mini-stat span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 54px 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+    }
+
+    .section-title p {
+      max-width: 520px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: 0 18px 70px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(18px);
+      padding: 24px;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 16px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--blue);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      font-size: 22px;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    li::before {
+      content: "•";
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .stack-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack-item {
+      padding: 10px 13px;
+      border-radius: 14px;
+      background: rgba(2, 6, 23, 0.42);
+      color: #cbd5e1;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .philosophy {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(56, 189, 248, 0.11), rgba(139, 92, 246, 0.12)),
+        var(--card-strong);
+    }
+
+    .code-block {
+      padding: 22px;
+      border-radius: 18px;
+      background: #020617;
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      color: #bae6fd;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 14px;
+      overflow-x: auto;
+      margin-top: 18px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .github-img {
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .wide-stat {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wide-stat img {
+      width: min(100%, 560px);
+    }
+
+    .music-panel {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .music-visual {
+      min-height: 310px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      background:
+        radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.22), transparent 12rem),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.22), transparent 12rem),
+        rgba(15, 23, 42, 0.78);
+      padding: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bars {
+      position: absolute;
+      inset: auto 24px 24px 24px;
+      display: flex;
+      align-items: end;
+      gap: 9px;
+      height: 145px;
+    }
+
+    .bar {
+      flex: 1;
+      border-radius: 999px 999px 6px 6px;
+      background: linear-gradient(to top, var(--purple), var(--blue));
+      opacity: 0.82;
+      animation: bounce 1.8s infinite ease-in-out;
+    }
+
+    .bar:nth-child(1) { height: 32%; animation-delay: 0s; }
+    .bar:nth-child(2) { height: 65%; animation-delay: 0.15s; }
+    .bar:nth-child(3) { height: 46%; animation-delay: 0.3s; }
+    .bar:nth-child(4) { height: 92%; animation-delay: 0.45s; }
+    .bar:nth-child(5) { height: 58%; animation-delay: 0.6s; }
+    .bar:nth-child(6) { height: 78%; animation-delay: 0.75s; }
+    .bar:nth-child(7) { height: 40%; animation-delay: 0.9s; }
+    .bar:nth-child(8) { height: 86%; animation-delay: 1.05s; }
+
+    @keyframes bounce {
+      0%, 100% { transform: scaleY(0.82); }
+      50% { transform: scaleY(1); }
+    }
+
+    .music-visual h3 {
+      position: relative;
+      z-index: 2;
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      max-width: 260px;
+    }
+
+    .music-visual p {
+      position: relative;
+      z-index: 2;
+      color: var(--muted);
+      margin-top: 12px;
+      max-width: 320px;
+    }
+
+    .footer {
+      padding: 54px 0 42px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: rgba(5, 8, 22, 0.42);
+    }
+
+    .footer h2 {
+      color: var(--text);
+      font-size: 28px;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+
+    .email {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 13px 18px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(139, 92, 246, 0.16));
+      border: 1px solid rgba(56, 189, 248, 0.24);
+      color: white;
+      font-weight: 800;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: reveal 0.7s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.08s; }
+    .delay-2 { animation-delay: 0.16s; }
+    .delay-3 { animation-delay: 0.24s; }
+
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .hero-grid,
+      .grid.two,
+      .grid.three,
+      .stats-row,
+      .music-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        display: block;
+      }
+
+      .section-title p {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding-bottom: 44px;
+      }
+
+      .card,
+      .profile-card,
+      .music-visual {
+        padding: 20px;
+      }
+
+      .mini-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-actions {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+    }
+  </style>
 </head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">DX</span>
+        <span>DarkXploit</span>
+      </a>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://i.top4top.io/p_21521k8a51.jpg');">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#music">Music Intelligence</a>
+        <a href="#stack">Stack</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <main id="top">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow reveal">
+            <span class="pulse"></span>
+            Developer • Automation Builder • AI Experimenter
+          </div>
 
+          <h1 class="reveal delay-1">
+            Ashrafi Khandaker Abir
+            <span class="gradient-text">DarkXploit</span>
+          </h1>
 
-  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-    
-	<!--Main Col-->
-	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-	
+          <p class="subtitle reveal delay-2">
+            I build practical tools, automation systems, AI experiments, backend projects,
+            and music intelligence workflows that solve real problems.
+          </p>
 
-		<div class="p-4 md:p-12 text-center lg:text-left">
-			<!-- Image for mobile view-->
-			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
-			
-			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Ashrafi Abir</h1>
-			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg>Student</p>
-			<p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/></svg>Sherpur , Bangladesh</p>
-			<p class="pt-8 text-sm">Use your brain :)<br /> Google  Your friend</p>
+          <div class="hero-actions reveal delay-3">
+            <a class="button primary" href="https://github.com/ashrafiabir01" target="_blank" rel="noreferrer">
+              View GitHub
+            </a>
+            <a class="button secondary" href="mailto:ashrafiabir04@gmail.com">
+              Contact Me
+            </a>
+          </div>
 
-			<div class="pt-12 pb-8">
-				<button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
-				  Get In Touch
-				</button> 
-			</div>
+          <div class="chips reveal delay-3">
+            <span class="chip">Python</span>
+            <span class="chip">Automation</span>
+            <span class="chip">Security Tools</span>
+            <span class="chip">AI / ML</span>
+            <span class="chip">Music Data</span>
+            <span class="chip">Backend</span>
+          </div>
+        </div>
 
-			<div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-				<a class="link" href="https://www.facebook.com/ashrafiabir04" data-tippy-content="Facebook"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></a>
-				<a class="link" href="https://twitter.com/ashrafi_abir" data-tippy-content="Twitter"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></a>
-				<a class="link" href="https://github.com/darkhunter141" data-tippy-content="GitHub"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-				<!-- <a class="link" href="#" data-tippy-content="@unsplash_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Unsplash</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@dribble_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg></a> -->
-				<a class="link" href="https://www.instagram.com/ashrafiabir/" data-tippy-content="Instagram"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
-				<a class="link" href="https://www.youtube.com/channel/UCkSB55ezk_2vPVwoqmPVZwg" data-tippy-content="YouTube"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
-			</div>
-			
-			<!-- Use https://simpleicons.org/ to find the svg for your preferred product --> 
+        <aside class="profile-card reveal delay-2">
+          <div class="avatar">DX</div>
+          <h2>Building useful things.</h2>
+          <p>
+            My projects usually start from a problem I personally face.
+            Then I build, test, break, fix, and improve.
+          </p>
 
-		</div>
+          <div class="mini-stats">
+            <div class="mini-stat">
+              <strong>01</strong>
+              <span>Problem First</span>
+            </div>
+            <div class="mini-stat">
+              <strong>02</strong>
+              <span>Clean Output</span>
+            </div>
+            <div class="mini-stat">
+              <strong>03</strong>
+              <span>Real Use</span>
+            </div>
+            <div class="mini-stat">
+              <strong>04</strong>
+              <span>Keep Learning</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
 
-	</div>
-	
-	<!--Img Col-->
-	<div class="w-full lg:w-2/5">
-		<!-- Big profile image for side bar (desktop) -->
-		<img src="https://k.top4top.io/p_2152sja5b1.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
-		
-	</div>
-	
-	
-	<!-- Pin to top right corner -->
-	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
-		<button class="js-change-theme focus:outline-none">🌙</button>
-	  </div>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>
+            A short version of how I work and what I like to build.
+          </p>
+        </div>
 
-</div>
+        <div class="card philosophy">
+          <p>
+            I enjoy building things that are practical, fast, and useful. I like working with
+            automation, backend systems, cybersecurity utilities, AI/ML experiments, APIs,
+            Linux tools, music data, and web-based products.
+          </p>
 
-	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-	<script src="https://unpkg.com/tippy.js@4"></script>
-	<script>
-		//Init tooltips
-		tippy('.link',{
-		  placement: 'bottom'
-		})
+          <div class="code-block">
+Problem first.<br />
+Code second.<br />
+Keep it simple.<br />
+Make it useful.<br />
+Improve it again.
+          </div>
+        </div>
+      </div>
+    </section>
 
-		//Toggle mode
-		const toggle = document.querySelector('.js-change-theme');
-		const body = document.querySelector('body');
-		const profile = document.getElementById('profile');
-		
-		
-		toggle.addEventListener('click', () => {
+    <section id="work">
+      <div class="container">
+        <div class="section-title">
+          <h2>What I Work On</h2>
+          <p>
+            A mix of tools, experiments, and systems that connect code with real use.
+          </p>
+        </div>
 
-		  if (body.classList.contains('text-gray-900')) {
-			toggle.innerHTML = "☀️";
-			body.classList.remove('text-gray-900');
-			body.classList.add('text-gray-100');
-			profile.classList.remove('bg-white');
-			profile.classList.add('bg-gray-900');
-		  } else
-		  {
-			toggle.innerHTML = "🌙";
-			body.classList.remove('text-gray-100');
-			body.classList.add('text-gray-900');
-			profile.classList.remove('bg-gray-900');			
-			profile.classList.add('bg-white');
-			
-		  }
-		});
-		
-    </script>
-	
+        <div class="grid two">
+          <article class="card">
+            <div class="icon">⚙</div>
+            <h3>Automation & Tools</h3>
+            <ul>
+              <li>Python automation scripts</li>
+              <li>Bots and workflow tools</li>
+              <li>CLI utilities</li>
+              <li>API-based systems</li>
+              <li>Data processing scripts</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">♪</div>
+            <h3>Music Intelligence</h3>
+            <ul>
+              <li>Building a personal music brain</li>
+              <li>Working with Spotify and music metadata</li>
+              <li>Genre, mood, and vibe analysis</li>
+              <li>Playlist automation and discovery systems</li>
+              <li>Audio, lyrics, and artist data experiments</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">◈</div>
+            <h3>AI / ML</h3>
+            <ul>
+              <li>Machine learning experiments</li>
+              <li>NLP and classification</li>
+              <li>Data analysis workflows</li>
+              <li>Model testing</li>
+              <li>Practical AI tools</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">▣</div>
+            <h3>Web & Backend</h3>
+            <ul>
+              <li>Next.js projects</li>
+              <li>REST APIs</li>
+              <li>Backend services</li>
+              <li>Database-backed tools</li>
+              <li>Clean dashboards</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="container">
+        <div class="section-title">
+          <h2>Music Intelligence Project</h2>
+          <p>
+            One of my favorite areas is building systems that understand music taste,
+            metadata, audio features, lyrics, and playlist behavior.
+          </p>
+        </div>
+
+        <div class="music-panel">
+          <div class="music-visual">
+            <h3>Personal Music Brain</h3>
+            <p>
+              A system idea around discovery, mood analysis, artist data, and smart playlist generation.
+            </p>
+
+            <div class="bars" aria-hidden="true">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>What This System Tries To Do</h3>
+            <ul>
+              <li>Analyze songs using audio, lyrics, metadata, mood, and genre signals</li>
+              <li>Understand listening patterns and personal taste over time</li>
+              <li>Discover better tracks based on artist, vibe, genre, and mood</li>
+              <li>Create smarter playlists instead of random recommendations</li>
+              <li>Combine Spotify data with external datasets and local analysis</li>
+            </ul>
+
+            <div class="code-block">
+music_brain:<br />
+&nbsp;&nbsp;inputs: audio + lyrics + metadata + listening_history<br />
+&nbsp;&nbsp;outputs: mood, genre, vibe, discovery, playlists<br />
+&nbsp;&nbsp;goal: better music recommendations
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>
+            Tools and technologies I use across my projects.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="card">
+            <h3>Languages</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">Python</span>
+              <span class="stack-item">JavaScript</span>
+              <span class="stack-item">TypeScript</span>
+              <span class="stack-item">Dart</span>
+              <span class="stack-item">Java</span>
+              <span class="stack-item">C++</span>
+              <span class="stack-item">Go</span>
+              <span class="stack-item">Bash</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Web & App</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">React</span>
+              <span class="stack-item">Next.js</span>
+              <span class="stack-item">Node.js</span>
+              <span class="stack-item">Express</span>
+              <span class="stack-item">Flutter</span>
+              <span class="stack-item">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Backend & Data</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">FastAPI</span>
+              <span class="stack-item">Flask</span>
+              <span class="stack-item">Django</span>
+              <span class="stack-item">SQLite</span>
+              <span class="stack-item">PostgreSQL</span>
+              <span class="stack-item">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>AI / ML</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">PyTorch</span>
+              <span class="stack-item">TensorFlow</span>
+              <span class="stack-item">Scikit-learn</span>
+              <span class="stack-item">Pandas</span>
+              <span class="stack-item">NumPy</span>
+              <span class="stack-item">OpenCV</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">Git</span>
+              <span class="stack-item">GitHub</span>
+              <span class="stack-item">Docker</span>
+              <span class="stack-item">Linux</span>
+              <span class="stack-item">VS Code</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Cloud</h3>
+            <div class="stack-cloud">
+              <span class="stack-item">AWS</span>
+              <span class="stack-item">Azure</span>
+              <span class="stack-item">Google Cloud</span>
+              <span class="stack-item">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="github">
+      <div class="container">
+        <div class="section-title">
+          <h2>GitHub Overview</h2>
+          <p>
+            Live GitHub cards generated from my public GitHub profile.
+          </p>
+        </div>
+
+        <div class="stats-row">
+          <img class="github-img" src="https://github-readme-streak-stats.herokuapp.com/?user=ashrafiabir01&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak" />
+        </div>
+
+      
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2>Let’s build something useful.</h2>
+      <p>
+        For project ideas, collaboration, or contact, reach me by email.
+      </p>
+
+      <a class="email" href="mailto:ashrafiabir04@gmail.com">
+        ashrafiabir04@gmail.com
+      </a>
+
+      <p style="margin-top: 28px; font-size: 14px;">
+        © <span id="year"></span> Ashrafi Khandaker Abir. Built for GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const yearElement = document.getElementById("year");
+    yearElement.textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
